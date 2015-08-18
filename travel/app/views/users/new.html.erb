@@ -1,0 +1,32 @@
+
+<center>
+<% if @message %>
+<h3> <%= @message %></h3>
+<% end %>
+
+<p>Sign up for access.</p>
+
+<% if @user.errors.count > 0 %>
+  <p><%= @user.errors.full_messages %></p>
+<% end %>
+
+
+<%= form_tag '/users', method: 'post'  do %>
+  <%= label_tag "name:" %>
+  <%= text_field_tag :name%> <br />
+  <br/>
+  <%= label_tag "email:" %>
+  <%=email_field_tag :email%> <br />
+  <br />
+  <%=label_tag "password:" %>
+  <%=password_field_tag :password%> <br />
+  <br />
+  <%=label_tag "retype password:" %>
+  <%=password_field_tag :password_confirmation %>
+  <br />
+  <br />
+  <%= submit_tag "create new account"%>
+  <br />
+
+<% end %>
+</center>

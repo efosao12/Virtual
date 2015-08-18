@@ -1,0 +1,22 @@
+
+<center>
+
+<% if @message %>
+  <h3> <%= @message %></h3>
+<% end %>
+
+<%= form_tag "/sessions" do %>
+  <%= label_tag "email:"  %>
+  <%= email_field_tag :email%> <br />
+  <br />
+  <%= label_tag "password:" %>
+  <%= password_field_tag :password %>
+  <br>
+  <br>
+  <%= submit_tag "Log in!"%>
+  <br>
+  <br>
+  <%= link_to "sign up", {:controller => 'users', :action => 'new'}%>
+<% end %>
+
+</center>
