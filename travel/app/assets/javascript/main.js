@@ -6,13 +6,13 @@ console.log("connected")
 
 var apis = {
         'instagram':{
-            'client_id':'dccaeea556c74aa9aca8d69239eeb3cd',
-            'access_token':'dccaeea556c74aa9aca8d69239eeb3cd'
+            'client_id':'',
+            'access_token':''
         },
         'twitter':{
         },
         'youtube':{
-            'api_key':'AIzaSyCfAXlAG7n40MDnJWY8FIsrbiN-CzsBNNk'
+            'api_key':''
         }
     };
 
